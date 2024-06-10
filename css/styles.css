@@ -120,7 +120,7 @@ footer {
   align-items: center;
 }
 
-img[alt="home-img"]{
+img[alt="home-img"] {
   width: 24rem;
   aspect-ratio: 3 / 2;
   margin: auto;
@@ -129,52 +129,70 @@ img[alt="home-img"]{
 /* HOME */
 
 /* ABOUT */
-/*hero*/
 #about-body {
-  margin: 0;
   font-family: "Marcellus", sans-serif;
+
+  & h1 {
+    padding: 3rem;
+  }
 }
 
-.about-hero {
-  margin: 0;
-  background-image: url("https://robynainsley21.github.io/images/ecommerce-skincare/poko-skincare-a6OxyVdFzSA-unsplash.jpg");
+.about-desc-item {
+  width: 50%;
+}
 
+img[alt="about-hero-img"] {
+  width: 50%;
+  border-radius: 5px;
+}
+
+#about-see-products{
+  position: relative;
+  background-image: url("https://robynainsley21.github.io/images/ecommerce-skincare/poko-skincare-a6OxyVdFzSA-unsplash.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  font-size: large;
+  height: 50vh;
+}
 
+.about-desc-text{
+  width: 40%;
+}
+
+.about-see-text{
+ width: 80%;
+ text-align: center;
+ margin: auto;
+ font-size: larger;
+}
+
+.about-see-box{
+  width: 100%;
+  backdrop-filter: blur(7px);
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 6%;
 }
 
-.about-hero-btn {
-  border: 1px solid rgb(0, 0, 0, 0.5);
-  border-radius: 5px;
-  color: #000;
-  padding: 5px;
-  background-color: inherit;
-  width: 8rem;
-  font-size: 1rem;
-
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+#about-ingredients{
+  padding: 5%;
+  position: relative;
 }
 
-.about-hero-btn i {
-  width: 3px;
+.about-ing-box{
+  padding: 0;
+  margin: auto ;
+  width: 100vw;
 }
 
-.about-hero-box {
-  padding: 4rem;
-  backdrop-filter: blur(8px);
-  width: 50%;
-  border: 1px solid rgb(0, 0, 0, 0.5);
+.ing-card-title{
+  padding: .7rem;
 }
-/*hero*/
+
+.ing-card{
+  width: 15rem;
+}
 
 /* ABOUT */
 
@@ -252,19 +270,19 @@ footer {
     padding: 3rem;
   }
 
-  .home-descrip-box{
+  .home-descrip-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .home-desc{
+  .home-desc {
     width: 90%;
     text-align: center;
   }
 
-  img[alt="home-img"]{
+  img[alt="home-img"] {
     width: 15rem;
     margin: auto;
     border-radius: 6px;
@@ -272,27 +290,37 @@ footer {
   /* HOME */
 
   /* ABOUT */
-  .about-hero-box {
-    width: 90%;
-    padding: 2rem;
-  }
-  .product-items {
+  .about-desc {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 
-  #about-product-desc {
-    padding-top: 4rem;
+  img[alt="about-hero-img"] {
+    width: 13rem;
+    text-align: center;
   }
 
-  .product-section-image {
-    margin-bottom: 2rem;
-    width: 7rem;
-  }
-
-  .product-section-text {
+  .about-desc-text{
+    margin-top: 1.5rem;
     width: 90%;
+    text-align: center;
   }
+
+  #about-see-products{
+    top: 8rem;
+  }
+
+  .about-see-text{
+    font-size: 1rem;
+  }
+
+  #about-ingredients{
+    top: 10rem;
+  }
+
   /* ABOUT */
 
   /* CONTACT */
@@ -327,14 +355,14 @@ footer {
     width: 50%;
   }
 
-  .home-descrip-box{
+  .home-descrip-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .home-desc{
+  .home-desc {
     width: 70%;
     text-align: center;
     margin-top: 2rem;
@@ -342,25 +370,28 @@ footer {
   /*HOME*/
 
   /* ABOUT */
-  .about-hero-box {
-    width: 70%;
-    padding: 2rem;
-  }
-
-  #about-product-desc {
+  .about-desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 4rem;
+    align-items: center;
   }
 
-  .product-items {
-    display: flex;
-    flex-direction: column;
+  img[alt="about-hero-img"] {
+    width: 100%;
   }
 
-  .product-section-image {
-    margin-bottom: 1rem;
+  .about-desc-text{
+    width: 70%;
+    text-align: center;
+  }
+
+  #about-see-products{
+    top: 8rem;
+  }
+
+  #about-ingredients{
+    top: 9rem;
   }
   /* ABOUT */
 
@@ -383,9 +414,6 @@ footer {
 /*laptop*/
 @media (width > 769px) {
   /*HOME*/
-  /* #hero-box{
-        top: 7rem;
-    } */
   .hero-heading {
     font-size: 6rem;
     width: 50%;
