@@ -146,7 +146,7 @@ img[alt="about-hero-img"] {
   border-radius: 5px;
 }
 
-#about-see-products{
+#about-see-products {
   position: relative;
   background-image: url("https://robynainsley21.github.io/images/ecommerce-skincare/poko-skincare-a6OxyVdFzSA-unsplash.jpg");
   background-attachment: fixed;
@@ -155,18 +155,18 @@ img[alt="about-hero-img"] {
   height: 50vh;
 }
 
-.about-desc-text{
+.about-desc-text {
   width: 40%;
 }
 
-.about-see-text{
- width: 80%;
- text-align: center;
- margin: auto;
- font-size: larger;
+.about-see-text {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  font-size: larger;
 }
 
-.about-see-box{
+.about-see-box {
   width: 100%;
   backdrop-filter: blur(7px);
   height: 100%;
@@ -175,25 +175,24 @@ img[alt="about-hero-img"] {
   padding: 6%;
 }
 
-#about-ingredients{
+#about-ingredients {
   padding: 5%;
   position: relative;
 }
 
-.about-ing-box{
+.about-ing-box {
   padding: 0;
-  margin: auto ;
+  margin: auto;
   width: 100vw;
 }
 
-.ing-card-title{
-  padding: .7rem;
+.ing-card-title {
+  padding: 0.7rem;
 }
 
-.ing-card{
+.ing-card {
   width: 15rem;
 }
-
 /* ABOUT */
 
 /* PRODUCTS */
@@ -203,13 +202,20 @@ img[alt="about-hero-img"] {
 }
 
 .product-btns-box {
+  display: flex;
   padding: auto;
   text-align: center;
 }
 
-.card {
+.product-card {
   width: 18rem;
   height: 40rem;
+}
+
+.product-card .card-body:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 /* PRODUCTS */
 
@@ -303,21 +309,21 @@ footer {
     text-align: center;
   }
 
-  .about-desc-text{
+  .about-desc-text {
     margin-top: 1.5rem;
     width: 90%;
     text-align: center;
   }
 
-  #about-see-products{
+  #about-see-products {
     top: 8rem;
   }
 
-  .about-see-text{
+  .about-see-text {
     font-size: 1rem;
   }
 
-  #about-ingredients{
+  #about-ingredients {
     top: 10rem;
   }
 
@@ -381,16 +387,16 @@ footer {
     width: 100%;
   }
 
-  .about-desc-text{
+  .about-desc-text {
     width: 70%;
     text-align: center;
   }
 
-  #about-see-products{
+  #about-see-products {
     top: 8rem;
   }
 
-  #about-ingredients{
+  #about-ingredients {
     top: 9rem;
   }
   /* ABOUT */

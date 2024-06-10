@@ -97,7 +97,44 @@
       </nav>
     </header>
     <main class="container-fluid">
-      <h1>Product</h1>
+      <h1 class="text-center p-5">Discover Our Products</h1>
+      <div id="product-content" class="row" all-content></div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal fade"
+          id="detailModal"
+          tabindex="-1"
+          aria-labelledby="productModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel">
+                  Product Title
+                </h5>
+              </div>
+              <div class="modal-body">
+                <!-- Content will be dynamically inserted here -->
+                <img src="" class="img-fluid mb-3" alt="product-img">
+                <p><strong>Price:</strong><span id="productModalPrice"></span></p>
+                <p><strong>Volume:</strong><span id="productModalVolume"></span></p>
+                <p><strong>Details:</strong><span id="productModalDetails"></span></p>
+                <p><strong>Description:</strong><span id="productModalDescription"></span></p>
+              </div>
+              <div class="modal-footer m-auto">
+                <button
+                  type="button"
+                  class="btn product-btn"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <footer class="fixed-bottom">
       <div class="row">
