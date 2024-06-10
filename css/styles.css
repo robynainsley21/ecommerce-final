@@ -69,7 +69,7 @@ nav {
   background-color: var(--alternative);
 }
 
-img[alt="logo-img"]{
+img[alt="logo-img"] {
   width: 3.5rem;
   margin: 0;
 }
@@ -97,19 +97,11 @@ footer {
   background-position: center;
 }
 
-#home-body img {
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 #hero-box {
   position: relative;
   z-index: 9;
   top: 13rem;
+  height: 100vh;
 }
 
 .hero-heading {
@@ -118,6 +110,22 @@ footer {
   font-family: "Italiana", sans-serif;
   text-align: center;
 }
+
+.home-descrip-box {
+  position: relative;
+  z-index: 9;
+  background-color: var(--alternative);
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+img[alt="home-img"]{
+  width: 24rem;
+  aspect-ratio: 3 / 2;
+  margin: auto;
+  border-radius: 6px;
+}
 /* HOME */
 
 /* ABOUT */
@@ -125,10 +133,6 @@ footer {
 #about-body {
   margin: 0;
   font-family: "Marcellus", sans-serif;
-}
-
-#about-body main {
-  margin-top: 0;
 }
 
 .about-hero {
@@ -170,43 +174,8 @@ footer {
   width: 50%;
   border: 1px solid rgb(0, 0, 0, 0.5);
 }
-
-img[alt="about-hero-img"] {
-  width: 24rem;
-  border-radius: 10px;
-}
 /*hero*/
 
-/* page */
-#about-product-desc {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-}
-
-.product-items {
-  display: flex;
-  justify-content: space-between;
-}
-
-.product-section-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-}
-
-.product-section-image {
-  border-radius: 10px;
-  margin: auto;
-}
-
-.ingredient {
-  width: 100%;
-  border-radius: 5px;
-}
-/* page */
 /* ABOUT */
 
 /* PRODUCTS */
@@ -264,7 +233,7 @@ img[alt="about-hero-img"] {
   justify-content: center;
 }
 
-footer{
+footer {
   color: #000;
 }
 /* CONTACT */
@@ -281,6 +250,24 @@ footer{
     font-size: 3.4rem;
     margin: auto;
     padding: 3rem;
+  }
+
+  .home-descrip-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-desc{
+    width: 90%;
+    text-align: center;
+  }
+
+  img[alt="home-img"]{
+    width: 15rem;
+    margin: auto;
+    border-radius: 6px;
   }
   /* HOME */
 
@@ -309,11 +296,11 @@ footer{
   /* ABOUT */
 
   /* CONTACT */
-  #contact-main{
+  #contact-main {
     margin-top: 6rem;
   }
 
-  #contact-form{
+  #contact-form {
     margin: auto;
   }
 
@@ -339,6 +326,19 @@ footer{
     font-size: 5rem;
     width: 50%;
   }
+
+  .home-descrip-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-desc{
+    width: 70%;
+    text-align: center;
+    margin-top: 2rem;
+  }
   /*HOME*/
 
   /* ABOUT */
@@ -353,6 +353,7 @@ footer{
     justify-content: center;
     padding-top: 4rem;
   }
+
   .product-items {
     display: flex;
     flex-direction: column;
@@ -372,7 +373,7 @@ footer{
     display: flex;
     flex-direction: column;
   }
-  
+
   .contact-item {
     width: 100%;
   }
