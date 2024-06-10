@@ -39,7 +39,7 @@
 
     <title>About</title>
   </head>
-  <body id="about-body">
+  <body>
     <header>
       <nav class="navbar py-4 fixed-top navbar-expand-lg">
         <div class="container-fluid" id="navbar">
@@ -108,23 +108,108 @@
                   <a class="nav-link" href="admin.html">Admin</a>
                 </li>
               </ul>
-              <!-- <form class="d-flex mt-3" id="search-form" role="search">
-                    <input
-                      class="form-control me-2"
-                      type="search"
-                      placeholder="Search item"
-                      aria-label="Search"
-                    />
-                    <button class="btn btn-outline-success" type="submit">
-                      Search
-                    </button>
-                  </form> -->
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main>
+    <main id="about-body">
+      <section class="full-height" id="about-description">
+        <h1 class="text-center">About Our Company</h1>
+        <div class="row about-desc">
+          <div
+            class="about-desc-item col-6 d-flex flex-column align-items-center"
+          >
+            <img
+              src="https://robynainsley21.github.io/images/ecommerce-skincare/fleur-kaan-e7jpGYe7OtU-unsplash.jpg"
+              alt="about-hero-img"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="about-desc-item about-desc-text col-6 d-flex flex-column align-items-start justify-content-center"
+          >
+            <h4 class="text-center">Our Story</h4>
+            <p>
+              Welcome to beaute, where nature meets science to give you the
+              healthiest, most radiant skin possible. Our mission is to harness
+              the power of nature’s finest ingredients, combined with
+              cutting-edge scientific research, to provide you with products
+              that are not only effective but also kind to your skin and the
+              environment.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about-see-products">
+        <div class="about-see-box">
+          <p class="about-see-text">
+            We are committed to using only the highest quality, sustainably
+            sourced ingredients, and believe in transparency, efficacy, and the
+            power of nature to bring out your skin’s natural beauty.
+          </p>
+          <a class="m-auto mt-0" href="./product.html"
+            ><button class="btn product-btn mt-0">See products</button></a
+          >
+        </div>
+      </section>
+      <section class="w-100" id="about-ingredients">
+        <h2 class="text-center mb-4">Some of Our Ingredients</h2>
+        <div class="about-ing-box row w-100">
+          <div class="ing-card col-3 ing-item-1 m-auto">
+            <ul class="list-group">
+              <li class="list-group-item p-0">
+                <img
+                  class="card-img-top"
+                  src="https://robynainsley21.github.io/images/ecommerce-skincare/tamara-shchypchynska-jtAvJcJCdgY-unsplash.jpg"
+                  alt="ingredient-img"
+                  loading="lazy"
+                />
+                <p class="ing-card-title">Green Tea Extract</p>
+              </li>
+            </ul>
+          </div>
+          <div class="ing-card col-3 ing-item-2 m-auto">
+            <ul class="list-group">
+              <li class="list-group-item p-0">
+                <img
+                  src="https://robynainsley21.github.io/images/ecommerce-skincare/vitamin-c-ingredient.jpg"
+                  class="card-img-top"
+                  alt="ingredient-img"
+                  loading="lazy"
+                />
+                <p class="card-title ing-card-title">Vitamin C</p>
+              </li>
+            </ul>
+          </div>
+          <div class="ing-card col-3 ing-item-3 m-auto">
+            <ul class="list-group">
+              <li class="list-group-item p-0">
+                <img
+                  src="https://robynainsley21.github.io/images/ecommerce-skincare/aloe-ingredient.jpg"
+                  class="card-img-top"
+                  alt="ingredient-img"
+                  loading="lazy"
+                />
+                <p class="card-title ing-card-title">Aloe Vera</p>
+              </li>
+            </ul>
+          </div>
+          <div class="ing-card col-3 ing-item-4 m-auto">
+            <ul class="list-group">
+              <li class="list-group-item p-0">
+                <img
+                  src="https://robynainsley21.github.io/images/ecommerce-skincare/pmv-chamara-IXkF7CyMo10-unsplash.jpg"
+                  class="card-img-top"
+                  alt="ingredient-img"
+                  loading="lazy"
+                />
+                <p class="card-title ing-card-title">Hyaluronic Acid</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="fixed-bottom">
       <div class="row">
