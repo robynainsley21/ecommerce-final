@@ -1,0 +1,406 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*general styling*/
+:root {
+  --primary: #bbab8c;
+  --secondary: #faeed1;
+  --alternative: #ded0b6;
+  --bg: #fdf7e4;
+  /*dark mode?*/
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Marcellus", sans-serif;
+  color: #000;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.light-text {
+  color: var(--bg);
+}
+
+.nav-link {
+  color: var(--bg);
+}
+
+main {
+  margin-top: 8rem;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.row {
+  width: 100vw;
+  row-gap: 1rem;
+}
+
+.card {
+  width: 15rem;
+  border-radius: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*navbar*/
+nav {
+  background-color: var(--primary);
+}
+
+.offcanvas {
+  background-color: var(--alternative);
+}
+
+img[alt="logo-img"]{
+  width: 3.5rem;
+  margin: 0;
+}
+/*navbar*/
+
+/* footer */
+footer {
+  color: var(--bg);
+  text-align: center;
+  backdrop-filter: blur(5px);
+  padding-top: 0.8rem;
+}
+/* footer */
+/*general styling*/
+
+/* HOME */
+#main-home {
+  margin-top: 0;
+}
+
+#home-body {
+  background-image: url("https://robynainsley21.github.io/images/ecommerce-skincare/hero-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#home-body img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#hero-box {
+  position: relative;
+  z-index: 9;
+  top: 13rem;
+}
+
+.hero-heading {
+  color: var(--bg);
+  font-size: 7rem;
+  font-family: "Italiana", sans-serif;
+  text-align: center;
+}
+/* HOME */
+
+/* ABOUT */
+/*hero*/
+#about-body {
+  margin: 0;
+  font-family: "Marcellus", sans-serif;
+}
+
+#about-body main {
+  margin-top: 0;
+}
+
+.about-hero {
+  margin: 0;
+  background-image: url("https://robynainsley21.github.io/images/ecommerce-skincare/poko-skincare-a6OxyVdFzSA-unsplash.jpg");
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-size: large;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero-btn {
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: #000;
+  padding: 5px;
+  background-color: inherit;
+  width: 8rem;
+  font-size: 1rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-hero-btn i {
+  width: 3px;
+}
+
+.about-hero-box {
+  padding: 4rem;
+  backdrop-filter: blur(8px);
+  width: 50%;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+img[alt="about-hero-img"] {
+  width: 24rem;
+  border-radius: 10px;
+}
+/*hero*/
+
+/* page */
+#about-product-desc {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.product-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.product-section-image {
+  border-radius: 10px;
+  margin: auto;
+}
+
+.ingredient {
+  width: 100%;
+  border-radius: 5px;
+}
+/* page */
+/* ABOUT */
+
+/* PRODUCTS */
+.product-btn {
+  outline: 1px solid;
+  margin: auto;
+}
+
+.product-btns-box {
+  padding: auto;
+  text-align: center;
+}
+
+.card {
+  width: 18rem;
+  height: 40rem;
+}
+/* PRODUCTS */
+
+/*for javascript*/
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* CONTACT */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  padding: 1.5rem;
+
+  & button {
+    outline: 1px solid var(--primary);
+  }
+}
+
+.contact-text {
+  margin: 1rem;
+}
+
+.contact-item {
+  width: 50%;
+  margin: 0.5rem;
+}
+
+#contact-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer{
+  color: #000;
+}
+/* CONTACT */
+
+/*media queries*/
+/*mobile*/
+@media (width < 439px) {
+  /* HOME */
+  #hero-box {
+    top: 10rem;
+  }
+
+  .hero-heading {
+    font-size: 3.4rem;
+    margin: auto;
+    padding: 3rem;
+  }
+  /* HOME */
+
+  /* ABOUT */
+  .about-hero-box {
+    width: 90%;
+    padding: 2rem;
+  }
+  .product-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-product-desc {
+    padding-top: 4rem;
+  }
+
+  .product-section-image {
+    margin-bottom: 2rem;
+    width: 7rem;
+  }
+
+  .product-section-text {
+    width: 90%;
+  }
+  /* ABOUT */
+
+  /* CONTACT */
+  #contact-main{
+    margin-top: 6rem;
+  }
+
+  #contact-form{
+    margin: auto;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-item {
+    width: 100%;
+  }
+  /* CONTACT */
+}
+
+/*tablet*/
+@media (max-width: 769px) and (min-width: 439px) {
+  /*HOME*/
+  #hero-box {
+    top: 10rem;
+  }
+
+  .hero-heading {
+    font-size: 5rem;
+    width: 50%;
+  }
+  /*HOME*/
+
+  /* ABOUT */
+  .about-hero-box {
+    width: 70%;
+    padding: 2rem;
+  }
+
+  #about-product-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4rem;
+  }
+  .product-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-section-image {
+    margin-bottom: 1rem;
+  }
+  /* ABOUT */
+
+  /* CONTACT */
+  #contact-form {
+    margin: auto 5rem;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-item {
+    width: 100%;
+  }
+  /* CONTACT */
+}
+
+/*laptop*/
+@media (width > 769px) {
+  /*HOME*/
+  /* #hero-box{
+        top: 7rem;
+    } */
+  .hero-heading {
+    font-size: 6rem;
+    width: 50%;
+  }
+  /*HOME*/
+
+  /* ABOUT */
+  .product-section-text {
+    width: 40%;
+    margin: auto;
+  }
+  /* ABOUT */
+
+  /* CONTACT */
+  #contact-form {
+    margin: auto 20%;
+  }
+  /* CONTACT */
+}
