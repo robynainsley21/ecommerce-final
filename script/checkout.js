@@ -1,0 +1,1 @@
+import { checkoutProducts } from "./product";
