@@ -11,6 +11,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 1,
         productName: "Retinol Sculpting Serum",
+        category: "serum",
         volume: "50ml",
         details:
           "0.3% concentration, amino-peptides, hydroxyacids, glycerin, vitamin E",
@@ -23,6 +24,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 2,
         productName: "Skin Brightening set",
+        category: "pigmentation",
         volume: "30ml, 30ml, 50ml, 50ml",
         details:
           "vitamin C, glycolic acid, green tea extract, peptides, niacinamide",
@@ -35,6 +37,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 3,
         productName: "Daily Microfoliant",
+        category: "cleanser",
         volume: "130ml",
         details: "oatmeal, jojoba beads, glycerin, ceramides ",
         description:
@@ -46,6 +49,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 4,
         productName: "Niacinamide 10% + Zinc 1%",
+        category: "moisture",
         volume: "100ml",
         details: "niacinamide, zinc, vitamin B",
         description:
@@ -57,6 +61,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 5,
         productName: "Hydrating Mask",
+        category: "moisture",
         volume: "100ml",
         details: "hyaluronic acid, squalane, sorbitol, chamomile",
         description:
@@ -68,6 +73,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 6,
         productName: "Brightening Eye Cream",
+        category: "pigmentation",
         volume: "80ml",
         details: "vitamin C, caffeine, peptides, grape seed extract",
         description:
@@ -79,6 +85,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 7,
         productName: "Daily Moisturiser",
+        category: "moisture",
         volume: "200ml",
         details: "fragrance-free, hyaluronic acid, licorice extract",
         description:
@@ -90,6 +97,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 8,
         productName: "Green Tea Spritz",
+        category: "hydration",
         volume: "50ml",
         details: "green tea extract, vitamin E, ceramides",
         description:
@@ -101,6 +109,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 9,
         productName: "Make-Up Care Set",
+        category: "moisture",
         volume: "50ml, 80ml, 50ml, 100ml",
         details: "azelaic acid, foundation, hyaluronic acid, vegan",
         description:
@@ -112,6 +121,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 10,
         productName: "Regenerating Moisturiser",
+        category: "moisture",
         volume: "400ml",
         details:
           "hypo-allergenic, fragrance-free, retinol, vitamin C, glycerin",
@@ -124,6 +134,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 11,
         productName: "Clay Detox Scrub",
+        category: "cleanser",
         volume: "200ml",
         details: "kaolin clay, charcoal, tea tree oil, honey, acne",
         description:
@@ -135,6 +146,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 12,
         productName: "Hydro-boost Moisturiser",
+        category: "hydration",
         volume: "50ml",
         details: "hyaluronic acid, glycerin, aloe vera",
         description:
@@ -146,6 +158,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 13,
         productName: "Acne Treatment Set",
+        category: "cleanser",
         volume: "30ml, 50ml, 350ml",
         details: "salicylic acid, benzoyl peroxide, tea tree oil, ferulic acid",
         description:
@@ -157,6 +170,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 14,
         productName: "3-Step Nighttime Care",
+        category: "moisture",
         volume: "20ml, 50ml, 80ml",
         details: "aloe vera, vitamin E, lavender",
         description:
@@ -168,6 +182,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 15,
         productName: "Refreshing Aloe Skin Cream",
+        category: "hydration",
         volume: "70ml",
         details: "aloe vera, glycerin, essential oil, hyaluronic acid",
         description:
@@ -179,6 +194,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 16,
         productName: "Avocado Eye Cream",
+        category: "pigmentation",
         volume: "30ml",
         details: "avocado, vitamin E, vitamin C, caffeine",
         description:
@@ -190,6 +206,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 17,
         productName: "Rapid Wrinkle Repair",
+        category: "hydration",
         volume: "80ml",
         details: "rosewater, niacinamide, hyaluronic acid",
         description:
@@ -201,6 +218,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 18,
         productName: "Sensitive Skincare Set",
+        category: "moisture",
         volume: "300g, 150g, 130ml",
         details: "aloe vera, glycerin, antioxidants",
         description:
@@ -212,6 +230,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 19,
         productName: "Hydrating Face Mist",
+        category: "hydration",
         volume: "59ml each",
         details: "aloe vera, rosewater, chamomile, green tea",
         description:
@@ -223,6 +242,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 20,
         productName: "Full Cleansing Set",
+        category: "cleanser",
         volume: "80ml, 30ml, 100ml, 30ml, 90ml, 80ml",
         details: "vitamin C, charcoal, ceramides, hyaluronic acid, niacinamide",
         description:
@@ -234,6 +254,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 21,
         productName: "Pure Vitamin C Serum",
+        category: "pigmentation",
         volume: "20g",
         details: "vitamin C",
         description:
@@ -245,6 +266,7 @@ let checkoutItems = JSON.parse(localStorage.getItem("checkout"))
       {
         id: 22,
         productName: "Eco-Sun SPF50 Sunscreen",
+        category: "moisture",
         volume: "50ml",
         details: "sunscreen, green tea, aloe vera, zinc",
         description:
