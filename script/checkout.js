@@ -1,3 +1,4 @@
+
 const checkoutItems = JSON.parse(localStorage.getItem("checkout")) || []
 const checkoutBox = document.querySelector('[checkout-content]')
 const payBtn = document.querySelector('[purchase-btn]')
@@ -42,3 +43,4 @@ payBtn.addEventListener('click', () => {
         alert("Your cart is empty. Please add a product.")
     }
 })
+

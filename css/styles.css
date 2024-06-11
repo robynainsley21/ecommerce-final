@@ -267,6 +267,11 @@ footer {
 }
 /* CONTACT */
 
+/* CHECKOUT */
+img[alt="checkout-img"]{
+  width: 5rem;
+}
+
 /*media queries*/
 /*mobile*/
 @media (width < 439px) {
@@ -336,7 +341,7 @@ footer {
 
   /* CONTACT */
   #contact-main {
-    margin-top: 6rem;
+    margin-top: 7rem;
   }
 
   #contact-form {
