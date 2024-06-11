@@ -272,6 +272,12 @@ img[alt="checkout-img"]{
   width: 5rem;
 }
 
+:is(tr, td){
+  border: 1px solid gray;
+
+}
+
+
 /*media queries*/
 /*mobile*/
 @media (width < 439px) {
