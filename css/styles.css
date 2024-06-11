@@ -351,6 +351,19 @@ footer {
   .contact-item {
     width: 100%;
   }
+
+  .sort-items{
+    display: flex;
+    flex-direction: column;
+
+    & .search-item{
+      width: 100%;
+      margin: auto;
+      margin-bottom: .8rem;
+    }
+  }
+
+
   /* CONTACT */
 }
 

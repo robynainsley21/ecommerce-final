@@ -328,5 +328,6 @@ function addToCart(product) {
   }
 }
 window.onload = () => {
+  checkoutItems = JSON.parse(localStorage.getItem("checkout")) || [];
   document.querySelector("[counter]").textContent = checkoutItems.length || 0;
 };
