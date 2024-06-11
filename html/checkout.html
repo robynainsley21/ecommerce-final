@@ -89,12 +89,9 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="checkout.html">Checkout
-                    <span
-                    class="badge rounded-pil bg-dark"
-                    counter>
-                    0
-                </span>
+                  <a class="nav-link" href="checkout.html"
+                    >Checkout
+                    <span class="badge rounded-pil bg-dark" counter> 0 </span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -109,10 +106,34 @@
         </div>
       </nav>
     </header>
-    <main><h1>Checkout</h1></main>
+    <main>
+      <h1 class="text-center p-4 m-auto">Checkout</h1>
+      <table id="checkoutTable" class="table">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price per unit</th>
+            <th scope="col">Quantity Selected</th>
+            <th scope="col">Total Amount</th>
+            <th scope="col">Remove Item</th>
+          </tr>
+        </thead>
+        <tbody id="table-body" checkout-content>
+
+        </tbody>
+        <tr>
+          <th colspan="5">Total:</th>
+          <td>total here</td>
+        </tr>
+        <tr>
+          <th colspan="6"><button class="btn btn-dark" purchase-btn>Purchase Items</button></th>
+        </tr>
+      </table>
+    </main>
     <footer class="fixed-bottom">
       <div class="row">
-        <p current-year>&copy; Robyn Carnow </p>
+        <p current-year>&copy; Robyn Carnow</p>
       </div>
     </footer>
 
