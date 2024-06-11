@@ -89,7 +89,13 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="checkout.html">Checkout</a>
+                  <a class="nav-link" href="checkout.html">Checkout
+                    <span
+                    class="badge rounded-pil bg-dark"
+                    counter>
+                    0
+                </span>
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact</a>
@@ -103,10 +109,62 @@
         </div>
       </nav>
     </header>
-    <main id="contact-main"></main>
+    <main id="contact-main">
+      <div class="text-center contact-text">
+        <h1 class="mt-2">Contact Us</h1>
+      </div>
+      <form
+        class="col-mb-12"
+        action="https://formspree.io/f/xwkgyjal"
+        method="POST"
+        id="contact-form"
+      >
+        <div class="d-flex justify-content-between contact-box">
+          <div class="mb-3 contact-item">
+            <label for="exampleInputName1" class="form-label" name="name"
+              >Your name:</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputName1"
+              aria-describedby="emailHelp"
+              required
+            />
+          </div>
+          <div class="mb-3 contact-item">
+            <label for="exampleInputEmail1" class="form-label"
+              >Your email:</label
+            >
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Your message:</label>
+          <input
+            name="message"
+            type="text"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="d-flex justify-content-between">
+          <button type="submit" class="btn submit-btn fw-bold">Submit</button>
+          <button type="reset" class="btn pink-btn fw-bold">Clear</button>
+        </div>
+      </form>
+    </main>
     <footer class="fixed-bottom">
       <div class="row">
-        <p current-year>&copy; Robyn Carnow</p>
+        <p current-year>&copy; Robyn Carnow </p>
       </div>
     </footer>
 
