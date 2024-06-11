@@ -319,6 +319,8 @@ sortingByAmount.addEventListener("click", () => {
 /** cart functionality */
 function addToCart(product) {
   try {
+    /**for checkout */
+    const checkoutItems = JSON.parse(localStorage.getItem("checkout")) || []
     checkoutItems.push(product);
     localStorage.setItem("checkout", JSON.stringify(checkoutItems));
     document.querySelector("[counter]").textContent = checkoutItems.length || 0;
