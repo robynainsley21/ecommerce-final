@@ -1,9 +1,14 @@
-const checkoutItems = JSON.parse(localStorage.getItem("checkout")) || [];
+let checkoutItems = [];
+
+let storedItems = localStorage.getItem("checkout");
+if (storedItems) {
+  checkoutItems = JSON.parse(storedItems);
+}
+
 const checkoutBox = document.querySelector("[checkout-content]");
 const payBtn = document.querySelector("[purchase-btn]");
 const allTotal = document.querySelector("[all-total]");
 
-console.log(checkoutItems);
 const productQuantity = {};
 
 checkoutItems.forEach((product) => {
@@ -31,7 +36,7 @@ Object.values(productQuantity).forEach(({ product, quantity }) => {
   console.log(product);
 });
 
-allTotal.textContent += `R${totalPrice}`;
+allTotal.innerHTML = `R${totalPrice}`;
 
 function removeItem(itemId) {
   try {
@@ -59,7 +64,7 @@ function removeItem(itemId) {
         newTotalPrice += quantity * parseInt(product.price);
       });
 
-      allTotal.textContent += `R${newTotalPrice}`;
+      allTotal.textContent = `R${newTotalPrice}`;
     }
   } catch (error) {
     alert("Item could not be removed. Please try again.");
