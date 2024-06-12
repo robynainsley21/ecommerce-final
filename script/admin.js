@@ -77,21 +77,19 @@ addBtn.addEventListener('click', () => {
     `
 
     /**creating the modal element */
-    const modal = document.createElement('div')
-    modal.className = 'modal fade'
-    modal.setAttribute('id', 'newItemModal')
-    modal.innerHTML = modalContent
-    document.body.appendChild(modal)
+    const modalContainer = document.createElement('div')
+    modalContainer.innerHTML = modalContent
+    document.body.appendChild(modalContainer)
 
-    const modalInstance = new bootstrap.Modal(modal, {
+    const newItemModal = new bootstrap.Modal(document.getElementById('newItemModal'), {
         keyboard: false
-      })
+    })
 
-    modalInstance.show()
+    newItemModal.show()
 
     const closeModalBtn = document.getElementById('closeModal')
     closeModalBtn.addEventListener('click', () => {
-        modalInstance.hide()
+        newItemModal.hide()
     })
 
     /**saving the item once edited */
@@ -105,7 +103,7 @@ addBtn.addEventListener('click', () => {
 
         /**creating an object for the new item */
         const newItem = {
-            imageUrl,
+            imgUrl: imageUrl,
             id: Date.now(),
             productName,
             category,
@@ -117,7 +115,17 @@ addBtn.addEventListener('click', () => {
         localStorage.setItem("products", JSON.stringify(allItems))
 
         /**automatically closing the modal once the item is added */
-        modalInstance.hide()
+        newItemModal.hide()
+
+        adminContainer.innerHTML += `
+                        <tr class="selected_prod" id="${newItem.id}">
+                <th scope="row"><img src="${newItem.img_url}" alt="checkout-img" loading="lazy"/></th>
+                <td>${newItem.productName}</td>
+                <td>${newItem.category}</td>
+                <td>R${newItem.price}</td>
+                <td><button class="btn btn-danger mx-1">Edit</button><button class="btn btn-success" onclick="removeItem(${newItem.id})">Remove</button></td>
+            </tr>
+        `
     })
 
 })
