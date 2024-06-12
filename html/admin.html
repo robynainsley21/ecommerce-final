@@ -107,7 +107,33 @@
         </div>
       </nav>
     </header>
-    <main><h1>Admin</h1></main>
+    <main>
+      <h1 class="text-center">Admin</h1>
+      <div class="row sort-items justify-content-between my-2 d-block p-2">
+        <div class="col-6 search-item">
+          <input
+            class="form-control search-bar"
+            type="text"
+            placeholder="Search product by name"
+            admin-search
+          />
+        </div>
+        <div class="col-6 search-item">
+          <button class="btn product-btn" add-item>Add item</button>
+        </div>
+      </div>
+      <table class="table" id="admin-content">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price per unit</th>
+            <th scope="col">Remove / Edit</th>
+          </tr>
+        </thead>
+      </table>
+    </main>
     <footer class="fixed-bottom">
       <div class="row">
         <p current-year>&copy; Robyn Carnow</p>
