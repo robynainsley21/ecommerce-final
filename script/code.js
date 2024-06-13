@@ -31,3 +31,14 @@ document.getElementById('contact-details').innerHTML = `
     </div>
 
 `
+
+let counterElement = document.querySelector('[counter]');
+// Function to update cart counter
+function updateCounter() {
+    let totalItems = checkoutItems.reduce((sum, item) => sum + item.qty, 0);
+    counterElement.textContent = totalItems;
+}
+
+window.onload = () => {
+    document.querySelector('[counter]').textContent = checkoutItems.length || 0;
+}
