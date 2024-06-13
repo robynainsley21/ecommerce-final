@@ -303,7 +303,7 @@ function displayProducts(products) {
 }
 displayProducts(allProducts);
 
-// /**searching for item on user input */
+/**searching for item on user input */
 searchProduct.addEventListener("keyup", () => {
   try {
     const searchTerm = searchProduct.value.toLowerCase();

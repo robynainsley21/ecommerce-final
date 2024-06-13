@@ -224,14 +224,17 @@ img[alt="about-hero-img"] {
 }
 /* PRODUCTS */
 
-/*for javascript*/
-.visible {
-  display: block;
+/* ADMIN */
+/*page*/
+
+
+/*modal*/
+#newItemModal form .form-group{
+  margin-top: 1rem;
 }
 
-.hidden {
-  display: none;
-}
+/* ADMIN */
+
 
 /* CONTACT */
 #contact-form {
@@ -274,7 +277,6 @@ img[alt="checkout-img"]{
 
 :is(tr, td){
   border: 1px solid gray;
-
 }
 
 
