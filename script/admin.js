@@ -261,56 +261,56 @@ searchInput.addEventListener("keyup", () => {
   }
 });
 
-    const modalContainer = document.createElement('div')
-    modalContainer.innerHTML = modalContent
-    document.body.appendChild(modalContainer)
+const modalContainer = document.createElement("div");
+modalContainer.innerHTML = modalContent;
+document.body.appendChild(modalContainer);
 
-    const newItemModal = new bootstrap.Modal(document.getElementById('newItemModal'), {
-        keyboard: false
-    })
+const newItemModal = new bootstrap.Modal(
+  document.getElementById("newItemModal"),
+  {
+    keyboard: false,
+  }
+);
 
-    newItemModal.show()
+newItemModal.show();
 
-    const closeModalBtn = document.getElementById('closeModal')
-    closeModalBtn.addEventListener('click', () => {
-        newItemModal.hide()
-    })
+const closeModalBtn = document.getElementById("closeModal");
+closeModalBtn.addEventListener("click", () => {
+  newItemModal.hide();
+});
 
-    /**saving the item once edited */
-    const saveItemBtn = document.getElementById('saveNewItem')
-    saveItemBtn.addEventListener('click', () => {
-        /**fetching the form values */
-        const productName = document.getElementById('productName').value
-        const category = document.getElementById('category').value
-        const price = document.getElementById('price').value
-        const imageUrl = document.getElementById('imgUrl').value
+/**saving the item once edited */
+const saveItemBtn = document.getElementById("saveNewItem");
+saveItemBtn.addEventListener("click", () => {
+  /**fetching the form values */
+  const productName = document.getElementById("productName").value;
+  const category = document.getElementById("category").value;
+  const price = document.getElementById("price").value;
+  const imageUrl = document.getElementById("imgUrl").value;
 
-        /**creating an object for the new item */
-        const newItem = {
-            imgUrl: imageUrl,
-            id: Date.now(),
-            productName,
-            category,
-            price
-        }
+  /**creating an object for the new item */
+  const newItem = {
+    imgUrl: imageUrl,
+    id: Date.now(),
+    productName,
+    category,
+    price,
+  };
 
-        /**saving the new item to local storage */
-        allItems.push(newItem)
-        localStorage.setItem("products", JSON.stringify(allItems))
+  /**saving the new item to local storage */
+  allItems.push(newItem);
+  localStorage.setItem("products", JSON.stringify(allItems));
 
-        /**automatically closing the modal once the item is added */
-        newItemModal.hide()
+  /**automatically closing the modal once the item is added */
+  newItemModal.hide();
 
-        adminContainer.innerHTML += `
-                        <tr class="selected_prod" id="${newItem.id}">
-                <th scope="row"><img src="${newItem.img_url}" alt="checkout-img" loading="lazy"/></th>
-                <td>${newItem.productName}</td>
-                <td>${newItem.category}</td>
-                <td>R${newItem.price}</td>
-                <td><button class="btn btn-danger mx-1">Edit</button><button class="btn btn-success" onclick="removeItem(${newItem.id})">Remove</button></td>
-            </tr>
-        `
-    })
-
-})
-
+  adminContainer.innerHTML += `
+    <tr class="selected_prod" id="${newItem.id}">
+        <th scope="row"><img src="${newItem.imgUrl}" alt="checkout-img" loading="lazy"/></th>
+        <td>${newItem.productName}</td>
+        <td>${newItem.category}</td>
+        <td>R${newItem.price}</td>
+        <td><button class="btn btn-danger mx-1">Edit</button><button class="btn btn-success" onclick="removeItem(${newItem.id})">Remove</button></td>
+    </tr>
+  `;
+});
