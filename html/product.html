@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- favicon -->
-     <link rel="shortcut icon" href="https://robynainsley21.github.io/images/ecommerce-skincare/ecommerce-logo__1_-removebg-preview.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="https://robynainsley21.github.io/images/ecommerce-skincare/ecommerce-logo__1_-removebg-preview.png"
+      type="image/x-icon"
+    />
 
     <!-- bootstrap -->
     <link
@@ -31,7 +35,11 @@
       <nav class="navbar py-4 fixed-top navbar-expand-lg">
         <div class="container-fluid" id="navbar">
           <a class="navbar-brand light-text" href="/index.html">
-            <img src="https://robynainsley21.github.io/images/ecommerce-skincare/ecommerce-logo__1_-removebg-preview.png" alt="logo-img" loading="lazy"/>
+            <img
+              src="https://robynainsley21.github.io/images/ecommerce-skincare/ecommerce-logo__1_-removebg-preview.png"
+              alt="logo-img"
+              loading="lazy"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -52,10 +60,10 @@
             <div class="offcanvas-header">
               <h5 class="offcanvas-title light-text" id="offcanvasNavbarLabel">
                 <img
-              src="https://robynainsley21.github.io/images/ecommerce-skincare/ecommerce-logo__1_-removebg-preview.png"
-              alt="logo-img"
-              loading="lazy"
-            />
+                  src="https://robynainsley21.github.io/images/ecommerce-skincare/ecommerce-logo__1_-removebg-preview.png"
+                  alt="logo-img"
+                  loading="lazy"
+                />
               </h5>
               <button
                 type="button"
@@ -82,12 +90,9 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="checkout.html">Checkout
-                    <span
-                    class="badge rounded-pil bg-dark"
-                    counter>
-                    0
-                </span>
+                  <a class="nav-link" href="checkout.html"
+                    >Checkout
+                    <span class="badge rounded-pil bg-dark" counter> 0 </span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -104,14 +109,21 @@
     </header>
     <main class="container-fluid">
       <h1 class="text-center p-5">Discover Our Products</h1>
-      <div class="row sort-items justify-content-between my-2 d-block p-2 ">
+      <div class="row sort-items justify-content-between my-2 d-block p-2">
         <div class="col-8 search-item">
-            <input class="form-control search-bar" type="text" placeholder="Search product by name" data-search-input>
+          <input
+            class="form-control search-bar"
+            type="text"
+            placeholder="Search product by name"
+            data-search-input
+          />
         </div>
         <div class="col-4 search-item">
-            <button class="btn product-btn" type="button" data-sort-price>Sort price</button>
+          <button class="btn product-btn" type="button" data-sort-price>
+            Sort price
+          </button>
         </div>
-    </div>
+      </div>
       <div id="product-content" class="row product-container" all-content></div>
       <div class="modal-dialog modal-dialog-centered">
         <div
@@ -130,11 +142,21 @@
               </div>
               <div class="modal-body">
                 <!-- Content will be dynamically inserted here -->
-                <img src="" class="img-fluid mb-3" alt="product-img">
-                <p><strong>Price:</strong><span id="productModalPrice"></span></p>
-                <p><strong>Volume:</strong><span id="productModalVolume"></span></p>
-                <p><strong>Details:</strong><span id="productModalDetails"></span></p>
-                <p><strong>Description:</strong><span id="productModalDescription"></span></p>
+                <img src="" class="img-fluid mb-3" alt="product-img" />
+                <p>
+                  <strong>Price:</strong><span id="productModalPrice"></span>
+                </p>
+                <p>
+                  <strong>Volume:</strong><span id="productModalVolume"></span>
+                </p>
+                <p>
+                  <strong>Details:</strong
+                  ><span id="productModalDetails"></span>
+                </p>
+                <p>
+                  <strong>Description:</strong
+                  ><span id="productModalDescription"></span>
+                </p>
               </div>
               <div class="modal-footer m-auto">
                 <button
@@ -149,10 +171,11 @@
           </div>
         </div>
       </div>
-
+      <div id="contact-details"></div>
+    </main>
     <footer class="fixed-bottom">
       <div class="row">
-        <p current-year>&copy; Robyn Carnow </p>
+        <p current-year>&copy; Robyn Carnow</p>
       </div>
     </footer>
 
