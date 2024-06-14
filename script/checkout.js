@@ -23,7 +23,7 @@ Object.values(productQuantity).forEach(({ product, quantity }) => {
   const price = quantity * parseInt(product.price);
   totalPrice += price;
   checkoutBox.innerHTML += `
-    <tr class="selected_prod" id="${product.id}">
+    <tr class="selected_prod checkout-row" id="${product.id}">
       <th scope="row"><img src="${product.img_url}" alt="checkout-img"/></th>
       <td>${product.productName}</td>
       <td>${product.category}</td>

@@ -10,12 +10,12 @@ function displayItems(products) {
   try {
     products.forEach((product) => {
       adminContainer.innerHTML += `
-                  <tr class="selected_prod" id="${product.id}">
+                  <tr class="selected_prod checkout-row" id="${product.id}">
                       <th scope="row"><img src="${product.img_url}" alt="checkout-img" loading="lazy"/></th>
                       <td>${product.productName}</td>
                       <td>${product.category}</td>
                       <td>R${product.price}</td>
-                      <td class="admin-btns>
+                      <td class="admin-btns">
                           <button class="btn mx-1 btn-success" onclick="editItem(${product.id})">Edit</button>
                           <button class="btn btn-danger" onclick="removeItem(${product.id})">Remove</button>
                       </td>
@@ -212,7 +212,7 @@ addBtn.addEventListener("click", () => {
       };
 
       adminContainer.innerHTML += `
-        <tr class="selected_prod" id="${newItem.id}">
+        <tr class="selected_prod checkout-row" id="${newItem.id}">
             <th scope="row"><img src="${newItem.img_url}" alt="checkout-img" loading="lazy"/></th>
             <td>${newItem.productName}</td>
             <td>${newItem.category}</td>
@@ -260,4 +260,3 @@ searchInput.addEventListener("keyup", () => {
     adminContainer.textContent = e.message || "Please try again later";
   }
 });
-
