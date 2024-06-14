@@ -285,6 +285,8 @@ function displayProducts(products) {
               <div class="card-body">
                   <h4 class="card-title">${product.productName}</h4>
                   <p class="card-text">R${product.price}</p>
+                  <p class="card-text">${product.volume ? product.volume : ""}</p>
+                  <p class="card-text">${product.details ? product.details : ""}</p>
                   <div class="product-btns-box">
                       <a class="btn product-btn" data-product-id="${
                         product.id
@@ -351,7 +353,7 @@ sortingByAmount.addEventListener("click", () => {
 /** cart functionality */
 function addToCart(product) {
   try {
-    /**for checkout */
+    alert("Item successfully added to cart.")
     let checkoutItems = localStorage.getItem("checkout");
     if (checkoutItems) {
       checkoutItems = JSON.parse(checkoutItems);
@@ -363,17 +365,10 @@ function addToCart(product) {
     localStorage.setItem("checkout", JSON.stringify(checkoutItems));
     document.querySelector("[counter]").textContent = checkoutItems.length || 0;
 
-    updateCounter()
   } catch (e) {
     console.error(e);
     alert("Unable to add to cart");
   }
-}
-
-// Function to update cart counter
-function updateCounter() {
-  let totalItems = checkoutItems.reduce((sum, item) => sum + item.qty, 0);
-  counterElement.textContent = totalItems;
 }
 
 
