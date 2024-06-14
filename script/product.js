@@ -288,9 +288,6 @@ function displayProducts(products) {
                   <p class="card-text">${product.volume ? product.volume : ""}</p>
                   <p class="card-text">${product.details ? product.details : ""}</p>
                   <div class="product-btns-box">
-                      <a class="btn product-btn" data-product-id="${
-                        product.id
-                      }" data-bs-toggle="modal" data-bs-target="#detailModal">See More</a>
                       <a class="btn product-btn" onclick='addToCart(${JSON.stringify(
                         product
                       )})' cart-btn>Add to Cart</a>
